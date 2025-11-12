@@ -14,7 +14,7 @@ on:
   pull_request:
     branches: [ "*" ]
 env:
-  imagename: ${{ secrets.DOCKER_USERNAME }}/springapp:${{ github.ref_name }}
+  imagename: ${{ vars.DOCKER_USERNAME }}/springapp:${{ github.ref_name }}
 
 jobs:
   build:
